@@ -1,0 +1,38 @@
+import { Card, CardContent } from "@/components/ui/card"
+import { GlobeIcon, LightbulbIcon, UsersIcon } from "lucide-react"
+
+export default function AboutPage() {
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-8 glow-text">About Electryon</h1>
+      <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">
+        <Card className="bg-black bg-opacity-50">
+          <CardContent className="flex flex-col items-center space-y-4 p-6">
+            <GlobeIcon className="h-12 w-12 text-green-500" />
+            <h2 className="text-xl font-bold">Our Mission</h2>
+            <p className="text-center text-gray-300">
+              Electryon is on a mission to accelerate the world's transition to electric transportation by creating the most cost-effective, scalable and sustainable charging solution for any type of electric vehicle.
+            </p>
+          </CardContent>
+        </Card>
+        <Card className="bg-black bg-opacity-50">
+          <CardContent className="flex flex-col items-center space-y-4 p-6">
+            <LightbulbIcon className="h-12 w-12 text-blue-500" />
+            <h2 className="text-xl font-bold">Our Vision</h2>
+            <p className="text-center text-gray-300">
+              We envision a future where electric vehicles can drive indefinitely on electric roads, eliminating the need for charging stops and enabling smaller batteries, making EVs more affordable and sustainable.
+            </p>
+          </CardContent>
+        </Card>
+        <Card className="bg-black bg-opacity-50">
+          <CardContent className="flex flex-col items-center space-y-4 p-6">
+            <UsersIcon className="h-12 w-12 text-green-500" />
+            <h2 className="text-xl font-bold">Our Team</h2>
+            <p className="text-center text-gray-300">
+              Electryon is led by a team of seasoned entrepreneurs and engineers with expertise in wireless power transfer, electric vehicles, and smart road systems. We're committed to driving innovation in sustainable transportation.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+      <div className="mt-12 text-center">
+        <h2 className="text-2xl font-bold mb-4 
