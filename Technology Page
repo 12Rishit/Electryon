@@ -1,0 +1,45 @@
+import { Card, CardContent } from "@/components/ui/card"
+import { BatteryChargingIcon, CarIcon, TruckIcon } from "lucide-react"
+
+export default function TechnologyPage() {
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-8 glow-text">Our Technology</h1>
+      <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">
+        <Card className="bg-black bg-opacity-50">
+          <CardContent className="flex flex-col items-center space-y-4 p-6">
+            <BatteryChargingIcon className="h-12 w-12 text-green-500" />
+            <h3 className="text-xl font-bold">Wireless Power Transfer</h3>
+            <p className="text-center text-gray-300">
+              Electryon's technology is based on magnetic resonance, which allows for efficient wireless power transfer from the road to the vehicle.
+            </p>
+          </CardContent>
+        </Card>
+        <Card className="bg-black bg-opacity-50">
+          <CardContent className="flex flex-col items-center space-y-4 p-6">
+            <CarIcon className="h-12 w-12 text-blue-500" />
+            <h3 className="text-xl font-bold">Smart Road Infrastructure</h3>
+            <p className="text-center text-gray-300">
+              Our system includes copper coils embedded under the road surface, connected to a power management unit and remote management system.
+            </p>
+          </CardContent>
+        </Card>
+        <Card className="bg-black bg-opacity-50">
+          <CardContent className="flex flex-col items-center space-y-4 p-6">
+            <TruckIcon className="h-12 w-12 text-green-500" />
+            <h3 className="text-xl font-bold">Vehicle Integration</h3>
+            <p className="text-center text-gray-300">
+              A receiver installed under the vehicle floor enables seamless charging while driving or when stationary over a charging segment.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+      <div className="mt-12 text-center">
+        <h2 className="text-2xl font-bold mb-4 glow-text">How It Works</h2>
+        <p className="text-gray-300 max-w-2xl mx-auto">
+          Electryon's Dynamic Wireless Power Transfer (DWPT) technology enables vehicles to charge while in motion. The system consists of copper coils embedded under the asphalt, which transfer energy to a receiver unit installed on the vehicle's underside. This allows for efficient and convenient charging without the need for stops or cables.
+        </p>
+      </div>
+    </div>
+  )
+}
