@@ -1,0 +1,39 @@
+import { Card, CardContent } from "@/components/ui/card"
+import { CarIcon, TruckIcon, BusIcon } from "lucide-react"
+
+export default function SolutionsPage() {
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-8 glow-text">Our Solutions</h1>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <Card className="bg-black bg-opacity-50">
+          <CardContent className="p-6">
+            <CarIcon className="h-12 w-12 text-green-500 mb-4" />
+            <h2 className="text-xl font-bold mb-2">Passenger Vehicles</h2>
+            <p className="text-gray-300">
+              Our wireless charging technology seamlessly integrates with passenger vehicles, providing convenient and efficient charging for everyday commuters. This solution eliminates range anxiety and the need for frequent charging stops.
+            </p>
+          </CardContent>
+        </Card>
+        <Card className="bg-black bg-opacity-50">
+          <CardContent className="p-6">
+            <TruckIcon className="h-12 w-12 text-blue-500 mb-4" />
+            <h2 className="text-xl font-bold mb-2">Commercial Fleets</h2>
+            <p className="text-gray-300">
+              For logistics and delivery companies, our technology offers a game-changing solution. Electric trucks can charge while on their routes, maximizing operational efficiency and reducing downtime associated with traditional charging methods.
+            </p>
+          </CardContent>
+        </Card>
+        <Card className="bg-black bg-opacity-50">
+          <CardContent className="p-6">
+            <BusIcon className="h-12 w-12 text-green-500 mb-4" />
+            <h2 className="text-xl font-bold mb-2">Public Transportation</h2>
+            <p className="text-gray-300">
+              Our wireless charging infrastructure is ideal for public transportation systems. Buses can charge at stops or along their routes, ensuring continuous operation and reducing the need for large, heavy batteries.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  )
+}
